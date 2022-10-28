@@ -24,6 +24,12 @@ let userPariDispari = prompt("pari o dispari?");
 document.getElementById("user-pd").innerHTML = userPariDispari;
 
 let userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+while (userNumber > 5) {
+    console.log(userNumber);
+    userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+}
+
+console.log(userNumber);
 document.getElementById("user-number").innerHTML = userNumber;
 
 function getRandomInteger (min, max) {
